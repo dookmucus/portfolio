@@ -1,9 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,900;1,700&display=swap");
 .btn:hover, .btn:focus {
-  background-color: #172E41;
   text-decoration: none;
-  -webkit-box-shadow: 0px 0px 3px 3px #ffffff;
-          box-shadow: 0px 0px 3px 3px #ffffff;
 }
 
 .btn-primary {
@@ -24,6 +21,47 @@
   background-color: #0e6fc4;
 }
 
+:not(.btn-check) + .btn-secondary:active {
+  background-color: initial;
+  color: #46A2F2;
+  border-bottom: 6px solid #46A2F2;
+}
+
+.btn-secondary {
+  background-color: transparent;
+  border: 0;
+  border-bottom: 6px solid #B22BCB;
+  border-radius: 0;
+  color: #172E41;
+  font-weight: 500;
+  padding: 0 0 4px 0;
+}
+
+.btn-secondary:hover {
+  background-color: transparent;
+  border: 0;
+  border-bottom: 6px solid #46A2F2;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  color: #172E41;
+}
+
+.btn-secondary:active {
+  background-color: transparent;
+  color: #46A2F2;
+}
+
+.badge {
+  border: 1px solid #cccccc;
+  font-size: 14px;
+  font-weight: normal;
+  padding: 6px 12px;
+}
+
+.large {
+  font-size: 120%;
+}
+
 a {
   color: #46A2F2;
   text-decoration: none;
@@ -32,6 +70,14 @@ a {
 a:hover {
   color: #B22BCB;
   text-decoration: underline;
+}
+
+a:hover svg path {
+  fill: #B22BCB;
+}
+
+a svg path {
+  fill: #46A2F2;
 }
 
 body {
@@ -53,6 +99,11 @@ h1 .job-title {
 
 h2, h3, h4 {
   font-weight: 600;
+}
+
+h6 {
+  color: #45627a;
+  font-weight: normal;
 }
 
 h2.centered {

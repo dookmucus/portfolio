@@ -15,9 +15,7 @@ $color-reverse-accent:#82BEF2;
 
 .btn {
     &:hover, &:focus {
-        background-color:$color-background-dark;
         text-decoration: none;
-        box-shadow: 0px 0px 3px 3px #ffffff;
     }
 }
 
@@ -37,6 +35,43 @@ $color-reverse-accent:#82BEF2;
     }
 }
 
+:not(.btn-check)+.btn-secondary:active {
+    background-color:initial;
+    color:$color-accent;
+    border-bottom:6px solid $color-accent;
+}
+.btn-secondary {
+    background-color:transparent;
+    border:0;
+    border-bottom:6px solid $color-button;
+    border-radius:0;
+    color:$color-background-dark;
+    font-weight:500;
+    padding:0 0 4px 0;
+
+    &:hover  {
+        background-color:transparent;
+        border:0;
+        border-bottom:6px solid $color-accent;
+        box-shadow:none;
+        color:$color-background-dark;
+    };
+    &:active  {
+        background-color:transparent;
+        color:$color-accent;
+    };
+}
+
+.badge {
+    border:1px solid #cccccc;
+    font-size:14px;
+    font-weight:normal;
+    padding:6px 12px;
+}
+
+.large {
+    font-size:120%;
+}
 
 a {
     color:$color-accent;
@@ -45,6 +80,18 @@ a {
     &:hover {
         color:$color-button;
         text-decoration:underline;
+
+        svg {
+        path {
+            fill:$color-button;
+        }
+    }
+    }
+
+    svg {
+        path {
+            fill:$color-accent;
+        }
     }
 }
 
@@ -66,6 +113,10 @@ h1 {
 }
 h2, h3, h4 {
     font-weight:600;
+}
+h6 {
+    color:#45627a;
+    font-weight:normal;
 }
 h2.centered {
     border-bottom:8px solid #46A2F2;
