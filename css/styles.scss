@@ -491,8 +491,11 @@ section {
     padding-top:160px;
 }
 
-#caseStudySection {
-    background-color:$color-intro;
+section {
+
+    &#caseStudySection {
+        background-color:$color-intro;
+    }
 
     article {
         .img-crop {

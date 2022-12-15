@@ -550,11 +550,11 @@ section .main-image img {
   padding-top: 160px;
 }
 
-#caseStudySection {
+section#caseStudySection {
   background-color: #F5FAFF;
 }
 
-#caseStudySection article .img-crop {
+section article .img-crop {
   border-radius: 15px;
   margin-bottom: 20px;
   max-height: 320px;
@@ -562,7 +562,7 @@ section .main-image img {
   width: 100%;
 }
 
-#caseStudySection article .img-crop img {
+section article .img-crop img {
   margin-left: -130%;
   margin-top: -40px;
   -webkit-transform: translateX(50%);
@@ -570,7 +570,7 @@ section .main-image img {
   width: 200%;
 }
 
-#caseStudySection .card {
+section .card {
   border: 2px solid #46A2F2;
   border-radius: 0;
   -webkit-box-shadow: none;
@@ -578,7 +578,7 @@ section .main-image img {
   padding: 20px;
 }
 
-#caseStudySection .card .image {
+section .card .image {
   background: linear-gradient(to top left, rgba(130, 190, 242, 0) 0%, rgba(130, 190, 242, 0) calc(50% - 2px), #82bef2 50%, rgba(130, 190, 242, 0) calc(50% + 2px), rgba(130, 190, 242, 0) 100%), linear-gradient(to top right, rgba(130, 190, 242, 0) 0%, rgba(130, 190, 242, 0) calc(50% - 2px), #82bef2 50%, rgba(130, 190, 242, 0) calc(50% + 2px), rgba(130, 190, 242, 0) 100%);
   border: 2px solid #46A2F2;
   height: 120px;
@@ -586,11 +586,11 @@ section .main-image img {
   width: 100%;
 }
 
-#caseStudySection .card h3, #caseStudySection .card h4, #caseStudySection .card b {
+section .card h3, section .card h4, section .card b {
   color: #46A2F2;
 }
 
-#caseStudySection .card button {
+section .card button {
   background: transparent;
   border: 2px solid #46A2F2;
   border-radius: 0;
@@ -599,7 +599,7 @@ section .main-image img {
   width: 100%;
 }
 
-#caseStudySection .card button:hover, #caseStudySection .card button:focus {
+section .card button:hover, section .card button:focus {
   background: #46A2F2;
   color: #ffffff;
   -webkit-box-shadow: 0px 0px 3px 3px #ffffff;
